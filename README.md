@@ -106,6 +106,28 @@
 10. 測試未知來源安裝設定入口。
    - 預期：顯示提醒並開啟 Android 未知來源設定頁。
 
+## 打包與安裝指令
+
+改完程式後，在專案根目錄執行：
+
+```powershell
+.\build-apk.ps1
+```
+
+輸出 APK 會放在：
+
+```text
+dist\anti-scam-safety-mvp-debug.apk
+```
+
+如果手機已開啟 USB 偵錯並連上電腦，可直接安裝：
+
+```powershell
+.\install-apk.ps1
+```
+
+也可以手動把 APK 傳到手機下載或聊天軟體，再從手機點開安裝。
+
 ## 已知限制
 
 - DNS VPN 只能根據網域與 DNS 查詢阻擋，無法讀取 HTTPS 頁面內容。
